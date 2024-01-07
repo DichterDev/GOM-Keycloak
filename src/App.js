@@ -4,8 +4,7 @@ import keycloak from "./Keycloak";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from "./components/Nav";
 import WelcomePage from "./pages/Homepage";
-import SecuredPage from "./pages/Securedpage";
-import PrivateRoute from "./helpers/PrivateRoute";
+import UserPage from "./pages/UserPage";
 
 function App() {
  return (
@@ -15,14 +14,7 @@ function App() {
        <BrowserRouter>
          <Routes>
            <Route exact path="/" element={<WelcomePage />} />
-           <Route
-             path="/secured"
-             element={
-               <PrivateRoute>
-                 <SecuredPage />
-               </PrivateRoute>
-             }
-           />
+           <Route exact path="/user" element={<UserPage />} />
          </Routes>
        </BrowserRouter>
      </ReactKeycloakProvider>

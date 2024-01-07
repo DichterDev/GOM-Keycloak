@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background-color: #007bff;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  float: left;
+  margin-right: 10px;
+}
+
+.nav li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+
+  color: white;
+}
+
+.nav button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transform: translateY(50%); /* This will move the button 50% of its height down */
+}
+
+.nav button:hover {
+  background-color: #0069d9;
+}

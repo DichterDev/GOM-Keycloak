@@ -1,0 +1,8 @@
+.modal {
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+}
